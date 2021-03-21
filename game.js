@@ -62,11 +62,12 @@ class Game{
                          text(allPlayers[plr].name ,x-25,y+25);
                          fill("white");
                          text(allPlayers.player1.name+":"+allPlayers.player1.score,50,50);
+                         text(allPlayers.player2.name+":"+allPlayers.player2.score,50,80);
 
                          
                      }
                  }
-                if (keyIsDown(RIGHT_ARROW) && player.index !== null) {
+                if (keyIsDown(RIGHT_ARROW) && player.index !== null) {   
                     player.distance -= 10
                     player.update();
                 }
